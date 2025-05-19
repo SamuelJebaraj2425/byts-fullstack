@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/twitch.png" alt="logo">
+            </div>
+            <h1>My Website</h1>
+            <ul class="nav-links">
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="./calculator.html">Calculator</a></li>
+            </ul>
+        </div>
+        <div class="outer">
+            <div class="add">
+                <div class="add-res">
+                    <p id="add-p">Enter two numbers</p>
+                </div>
+                <div class="add-input">
+                    <input  id="add-num1" placeholder="Number 1">
+                    <input  id="add-num2" placeholder="Number 2">
+                </div>
+                <div class="add-sub-clear">
+                    <button id="add-submit" onclick="add()">Add</button>
+                    <button id="add-clear" onclick="add_clear()">Clear</button>
+                </div>
+
+            </div>
+            <div class="temp">
+                <div class="temp-box">
+                    <input id="temp-box-input" placeholder="Enter temperature">
+                </div>
+                <button id="con-temp-button" onclick="calc_temp()">Convert</button>
+                <div class="far-box">
+                    <p id="far-box-p">Fahrenheit is <span id="temp-ans">_____</span></p>
+                </div>
+            </div>
+            <div class="watch">
+                <div class="watch-face">
+                    <p class="w-text">0</p>
+                </div>
+                <div class="watch-btn">
+                    <button id="start" onclick="start()">Start</button>
+                    <button id="stop" onclick="stop()">Stop</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+</body>
+
+</html>

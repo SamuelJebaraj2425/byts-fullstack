@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-calculator">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/twitch.png" alt="logo">
+            </div>
+            <h1>My Website</h1>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#" id="active">Calculator</a></li>
+            </ul>
+        </div>
+        <div class="calc-container">
+            <div class="calculator-box">
+                <div class="cal-res-box">
+                    <input type="text" id="result-cal" disabled>
+                </div>
+                <div class="keypad">
+                    <button onclick="update('1')">1</button>
+                    <button onclick="update('2')">2</button>
+                    <button onclick="update('3')">3</button>
+                    <button onclick="update('+')">+</button>
+                    <button onclick="update('4')">4</button>
+                    <button onclick="update('5')">5</button>
+                    <button onclick="update('6')">6</button>
+                    <button onclick="update('-')">-</button>
+                    <button onclick="update('7')">7</button>
+                    <button onclick="update('8')">8</button>
+                    <button onclick="update('9')">9</button>
+                    <button onclick="update('*')">x</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="update('0')">0</button>
+                    <button onclick="dellast()">del</button> 
+                    <button onclick="update('/')">/</button>
+                </div>
+                <button id="cal-clear" onclick="cal_clear()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="script4.js"></script>
+</body>
+
+</html>
